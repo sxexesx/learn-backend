@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="325" height="281" src="https://github.com/sxexesx/learn-backend/tree/main/misc/gopher.png">
+  <img width="325" height="281" src="https://github.com/sxexesx/learn-backend/blob/main/misc/gopher.png">
   <h3>Как стать настоящим гофером</h3>
 </div>
 
