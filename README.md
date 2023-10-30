@@ -4,4 +4,4 @@
 
 ## Hedaer 2
 
-## [Микросервисная архитектура] (https://github.com/sxexesx/learn-backend/blob/main/microsvc/common.md)
+## [Микросервисная архитектура](https://github.com/sxexesx/learn-backend/blob/main/microsvc/common.md)
