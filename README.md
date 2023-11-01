@@ -13,4 +13,4 @@
 1. tbd
 2. tbd
 3. [Микросервисная архитектура](https://github.com/sxexesx/learn-backend/blob/main/microsvc/common.md)
-   - Зачем она нужна
+   - [Плюсы и минусы микросервисной архитектуры](https://github.com/sxexesx/learn-backend/blob/main/microsvc/pros_cons.md)
