@@ -9,3 +9,5 @@
 6. [Модель TCP/IP](https://github.com/sxexesx/learn-backend/blob/main/networking/models.md#модель-tcpip)
 7. [Физический уровень](https://github.com/sxexesx/learn-backend/edit/main/networking/layers.md#физический-уровень)
 8. [Канальный уровень](https://github.com/sxexesx/learn-backend/edit/main/networking/layers.md#канальный-уровень)
+
+10. [Ethernet](https://github.com/sxexesx/learn-backend/blob/main/networking/ethernet.md)
