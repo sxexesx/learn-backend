@@ -11,6 +11,9 @@
 ## Содержание 
 
 1. tbd
-2. tbd
-3. [Микросервисная архитектура](https://github.com/sxexesx/learn-backend/blob/main/microsvc/common.md)
+2. [Паттерны проектирования]
+   - Порождающие
+   - Структурные
+   - Поведенческие
+4. [Микросервисная архитектура](https://github.com/sxexesx/learn-backend/blob/main/microsvc/common.md)
    - [Что такое микросервисы? Плюсы и минусы микросервисной архитектуры](https://github.com/sxexesx/learn-backend/blob/main/microsvc/about.md)
