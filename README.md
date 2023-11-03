@@ -11,7 +11,7 @@
 ## Содержание 
 
 1. tbd
-2. [Паттерны проектирования]
+2. [Паттерны проектирования] (https://github.dev/sxexesx/learn-backend/blob/main/microsvc/patterns/about.md)
    - Порождающие
    - Структурные
    - Поведенческие
