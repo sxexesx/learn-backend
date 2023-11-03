@@ -3,14 +3,14 @@
 В этом разделе разобраны основные паттерны проектирования с примерами кода на golang
 
 ### Виды паттернов
-1. Порождающие // Creational patterns
+1. #### Порождающие // Creational patterns
 - factory method
 - abstract facory
 - builder
 - prototype
 - singleton
 
-2. Структурные // Structural patterns
+2. #### Структурные // Structural patterns
 - adapter
 - bridge
 - composite
@@ -19,7 +19,7 @@
 - flyweight
 - proxy
 
-3. Поведенческие // Behavioral patterns
+3. #### Поведенческие // Behavioral patterns
 - chain of responsibility
 - command
 - iterator
