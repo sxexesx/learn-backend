@@ -24,3 +24,4 @@
      
 3. [Микросервисная архитектура](https://github.com/sxexesx/learn-backend/blob/main/microsvc/common.md)
    - [Что такое микросервисы? Плюсы и минусы микросервисной архитектуры](https://github.com/sxexesx/learn-backend/blob/main/microsvc/about.md)
+   - [Паттерны микросервисной архитектуры, которые обязательно знать]()
