@@ -36,3 +36,8 @@ Ethernet:
 <div align="center">
   <img width="320" height="200" src="https://github.com/sxexesx/learn-backend/assets/23579498/8692d186-3749-4fc2-9231-9af454f39c71">
 </div>
+
+### Основные стандарты
+* IEEE - сетевое оборудование
+* RFC - протоколы интернет
+* W3C - рекомендации Web
