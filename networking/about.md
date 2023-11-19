@@ -5,3 +5,5 @@
 2. [Топология сетей](https://github.com/sxexesx/learn-backend/blob/main/networking/common.md#топология-компьютерных-сетей)
 3. [Основные стандарты](https://github.com/sxexesx/learn-backend/blob/main/networking/common.md#основные-стандарты)
 4. [Основы организации компьютерных сетей](https://github.com/sxexesx/learn-backend/blob/main/networking/common.md#основы-организации-компьютерных-сетей)
+5. [Модель OSI](https://github.com/sxexesx/learn-backend/blob/main/networking/model_osi.md)
+6. [Модель TCP/IP](https://github.com/sxexesx/learn-backend/blob/main/networking/model_tcpip.md)
