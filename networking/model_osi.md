@@ -1,4 +1,4 @@
-OSI (Open System Interconnection)
+##Модель OSI (Open System Interconnection)
 
 <div align="center">
   <img width="400" height="225" src="https://github.com/sxexesx/learn-backend/assets/23579498/78022165-3b50-42ec-982a-85c37be19996">
