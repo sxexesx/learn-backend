@@ -28,5 +28,5 @@ _Прикладной_ - набор приложений, полезных по�
 
 Стек протоколов:
 <div align="center">
-  <img width="380" height="325" src="https://github.com/sxexesx/learn-backend/assets/23579498/3393e276-a0f8-42e4-87bd-9ddc10278708">
+  <img width="480" height="325" src="https://github.com/sxexesx/learn-backend/assets/23579498/3393e276-a0f8-42e4-87bd-9ddc10278708">
 </div>
