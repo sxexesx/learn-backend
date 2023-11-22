@@ -1,7 +1,7 @@
 ## Модель OSI (Open System Interconnection)
 
 <div align="center">
-  <img width="400" height="225" src="https://github.com/sxexesx/learn-backend/assets/23579498/78022165-3b50-42ec-982a-85c37be19996">
+  <img width="400" height="225" src="https://github.com/sxexesx/learn-backend/blob/main/misc/networking/net004.png">
 </div>
 
 _Физический_ - передача битов по каналам связи. Задача уровня представить биты информации в виде сигналов, передаваемых по среде.     
@@ -23,10 +23,10 @@ _Прикладной_ - набор приложений, полезных по�
 ## Модель TCP/IP
 
 <div align="center">
-  <img width="380" height="325" src="https://github.com/sxexesx/learn-backend/assets/23579498/ee71160c-f26c-4bc7-99ee-94ffd2d0b696">
+  <img width="380" height="325" src="https://github.com/sxexesx/learn-backend/blob/main/misc/networking/net005.png">
 </div>
 
 Стек протоколов:
 <div align="center">
-  <img width="480" height="325" src="https://github.com/sxexesx/learn-backend/assets/23579498/3393e276-a0f8-42e4-87bd-9ddc10278708">
+  <img width="480" height="325" src="https://github.com/sxexesx/learn-backend/blob/main/misc/networking/net006.png">
 </div>
