@@ -18,6 +18,7 @@
 
 **HTTPS** (HyperTextTransfer Protocol Secure) - расширение протокола HTTP, подерживающее шифрование посредством протоколов SSL и TLS.
 
+HTTP использует порт 80, HTTPS - 443
 
 ### Типы HTTP-запросов
 |Method| Значение |
