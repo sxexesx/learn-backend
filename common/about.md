@@ -7,3 +7,4 @@
 5. ### Что такое cors?
 
 ### Типы HTTP-запросов
+[Стандарт RFC-2616](https://datatracker.ietf.org/doc/html/rfc2616)  
