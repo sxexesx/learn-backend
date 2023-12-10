@@ -35,3 +35,5 @@
    - [Что такое микросервисы? Плюсы и минусы микросервисной архитектуры](https://github.com/sxexesx/learn-backend/blob/main/microsvc/about.md)
    - [Общие понятия микросервисной архитектуры. Принципы декомпозиции](https://github.com/sxexesx/learn-backend/blob/main/microsvc/decomposition.md) 
    - [Паттерны микросервисной архитектуры, которые обязательно знать](https://github.com/sxexesx/learn-backend/blob/main/microsvc/most_known.md)
+
+6. Язык GO
