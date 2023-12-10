@@ -22,11 +22,11 @@
 - общая шина - данные доступны сразу всем участникам подключенных к общей шине
 
 <div align="left">
-  <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/misc/networking/src/net01.png">
-  <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/misc/networking/src/net02.png">
-  <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/misc/networking/src/net03.png">
-  <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/misc/networking/src/net04.png">
-  <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/misc/networking/src/net05.png">
+  <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/networking/src/net01.png">
+  <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/networking/src/net02.png">
+  <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/networking/src/net03.png">
+  <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/networking/src/net04.png">
+  <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/networking/src/net05.png">
 </div>
 
 **Физическая топология** - соединение устройств в сети  
@@ -57,7 +57,7 @@ Ethernet:
 ## Модель OSI (Open System Interconnection)
 
 <div>
-  <img width="400" height="225" src="https://github.com/sxexesx/learn-backend/blob/main/misc/networking/src/net10.png" alt="">
+  <img width="400" height="225" src="https://github.com/sxexesx/learn-backend/blob/main/networking/src/net10.png" alt="">
 </div>
 
 _Физический_ - передача битов по каналам связи. Задача уровня представить биты информации в виде сигналов, передаваемых по среде.     
@@ -79,10 +79,10 @@ _Прикладной_ - набор приложений, полезных по�
 ## Модель TCP/IP
 
 <div>
-  <img width="380" height="325" src="https://github.com/sxexesx/learn-backend/blob/main/misc/networking/src/net11.png" alt="">
+  <img width="380" height="325" src="https://github.com/sxexesx/learn-backend/blob/main/networking/src/net11.png" alt="">
 </div>
 
 Стек протоколов:
 <div>
-  <img width="480" height="325" src="https://github.com/sxexesx/learn-backend/blob/main/misc/networking/src/net12.png" alt="">
+  <img width="480" height="325" src="https://github.com/sxexesx/learn-backend/blob/main/networking/src/net12.png" alt="">
 </div>
