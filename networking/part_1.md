@@ -22,7 +22,7 @@
 - общая шина - данные доступны сразу всем участникам подключенных к общей шине
 
 <div align="left">
-  <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/networking/src/net01.png">
+  <img width="180" height="125" src="src/net01.png">
   <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/networking/src/net02.png">
   <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/networking/src/net03.png">
   <img width="180" height="125" src="https://github.com/sxexesx/learn-backend/blob/main/networking/src/net04.png">
