@@ -3,7 +3,7 @@
 Задача - передача потока бит по среде. Не вникает в смысл передаваемой информации  
 Единица передачи данных - bit
 
-![image](https://github.com/sxexesx/learn-backend/blob/main/networking/src/net07.png)
+![image](src/net07.png)
 
 Характеристики:
 - пропускная способность
@@ -23,7 +23,7 @@
 
 ### Формирование кадра
 
-![image](https://github.com/sxexesx/learn-backend/blob/main/networking/src/net08.png)
+![image](src/net08.png)
 
 Методы выделения кадров:
 - указатель количества байт в начале кадра - на практике не применяется
@@ -32,7 +32,7 @@
 - средства физического уровня - ethernet
 
 Повторная отправка:  
-![image](https://github.com/sxexesx/learn-backend/blob/main/networking/src/net09.png)
+![image](src/net09.png)
 
 ### Подуровни канального уровня
 1. Управление логическим каналов - отвечает за передачу данных (создаение кадров, обработка ошибок и тд)
