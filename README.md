@@ -40,4 +40,6 @@
    - [Общие понятия микросервисной архитектуры. Принципы декомпозиции](https://github.com/sxexesx/learn-backend/blob/main/microsvc/decomposition.md) 
    - [Паттерны микросервисной архитектуры, которые обязательно знать](https://github.com/sxexesx/learn-backend/blob/main/microsvc/most_known.md)
 
-6. Язык GO
+6. SQL
+
+7. Язык GO
