@@ -14,7 +14,8 @@
    - [Стандарты, классификация, топология и модели](networking/part_1.md)
    - [Основные уровни](networking/part_2.md)
    - [Ethernet](networking/part_3.md)
-   - [Протоколы]()
+   - 
+   - [Основные протоколы]()
      - [STP]()
 
 2. [Компьютерные сети. Общие вопросы](https://github.com/sxexesx/learn-backend/blob/main/common/about.md)
