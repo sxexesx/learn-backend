@@ -13,7 +13,7 @@
 1. [Компьютерные сети](networking/part_1.md)
    - [Стандарты, классификация, топология и модели](networking/part_1.md)
    - [Основные уровни](networking/part_2.md)
-   - [Ethernet](networking/part_3.md)
+   - [Ethernet](networking/part_3.md) _(коммутируемый, некоммутируемый, MAC адреса, кадры, VLAN)_
    - 
    - [Основные протоколы]()
      - [STP]()
