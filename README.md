@@ -14,6 +14,7 @@
    - [Стандарты, классификация, топология и модели](networking/part_1.md)
    - [Основные уровни](networking/part_2.md)
    - [Ethernet](networking/part_3.md) _(коммутируемый, некоммутируемый, MAC адреса, кадры, VLAN)_
+   - [WiFi](networking/part_4.md)
    - 
    - [Основные протоколы]()
      - [STP](networking/part_3.md#протокол-stp)
