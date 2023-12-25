@@ -41,12 +41,16 @@
    - [Структурные](https://github.com/sxexesx/learn-backend/blob/main/patterns/about.md#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BD%D1%8B%D0%B5--structural-patterns)
    - [Поведенческие](https://github.com/sxexesx/learn-backend/blob/main/patterns/about.md#%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5--behavioral-patterns)
   
-5. [Микросервисная архитектура](https://github.com/sxexesx/learn-backend/blob/main/microsvc/common.md)
-   - [Что такое микросервисы? Плюсы и минусы микросервисной архитектуры](https://github.com/sxexesx/learn-backend/blob/main/microsvc/about.md)
-   - [Общие понятия микросервисной архитектуры. Принципы декомпозиции](https://github.com/sxexesx/learn-backend/blob/main/microsvc/decomposition.md) 
-   - [Паттерны микросервисной архитектуры, которые обязательно знать](https://github.com/sxexesx/learn-backend/blob/main/microsvc/most_known.md)
 
-6. SQL
+6. Язык GO
 
-7. Язык GO
-8. [Благодарности, курсы, полезное и прочее](misc/acknowledgements.md)
+7. SQL
+
+8. Kafka
+
+9. [Микросервисная архитектура](microsvc/common.md)
+   - [Что такое микросервисы? Плюсы и минусы микросервисной архитектуры](microsvc/about.md)
+   - [Общие понятия микросервисной архитектуры. Принципы декомпозиции](microsvc/decomposition.md) 
+   - [Паттерны микросервисной архитектуры, которые обязательно знать](microsvc/most_known.md)
+
+10. [Благодарности, курсы, полезное и прочее](misc/acknowledgements.md)
