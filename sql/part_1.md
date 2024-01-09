@@ -42,13 +42,17 @@ _**База данных**_ - это взаимосвязанная информ
 ### Типы данных
 
 * Числовые
-    - smallint, int2 - 2 байта
-    - integer, int - 4 байта
-    - bigint, int8 - 8 байт
-    - decimal / numeric - 2 байта на 4 цифры
-    - real - 4 байта
-    - double precision - 8 байт
-    - money - 8 байт
+    - SMALLINT, int2 - 2 байта
+    - INTEGER, int - 4 байта
+    - BIGINT, int8 - 8 байт
+    - DECIMAL / numeric - 2 байта на 4 цифры
+    - REAL - 4 байта
+    - DOUBLE PRICISSION - 8 байт
+    - MONEY - 8 байт
+* Бинарные
+    - BIT(N) - (N + 7) / 8 байт
+    - VARBIT(N)
+    - BOOLEAN - 1 байт
 * Строковые
 * Календарные
 * Null
