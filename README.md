@@ -20,7 +20,8 @@
    
    <details>
    <summary>Основные протоколы</summary>
-   <a href="networking/part_3.md#протокол-stp">Протокол STP</a>
+   <a href="networking/part_3.md#протокол-stp">Протокол STP</a><br>
+   <a href="networking/part_6.md#протокол-ip">Протокол IP</a>
    </details>
 
 2. [Компьютерные сети. Общие вопросы](https://github.com/sxexesx/learn-backend/blob/main/common/about.md)
