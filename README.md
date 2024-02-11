@@ -15,14 +15,16 @@
    - [Физический и канальный уровни](networking/part_2.md):
       - [Ethernet](networking/part_3.md) _(коммутируемый, некоммутируемый, MAC адреса, кадры, VLAN)_
       - [Wi-Fi](networking/part_4.md) _(режимы доступа, формат кадра)_
-   - [Сетевой уровень](networking/part_5.md)
-   - 
+   - [Сетевой уровень](networking/part_5.md) _(IP адреса, передача пакетов, протоколы IP, ICMP, ARP)_
+   - [Транспортный уровень](networking/part_7.md)
    
    <details>
    <summary>Основные протоколы</summary>
    <a href="networking/part_3.md#протокол-stp">Протокол STP</a><br>
    <a href="networking/part_6.md#протокол-ip">Протокол IP</a><br>
    <a href="networking/part_6.md#протокол-dhcp">Протокол DHCP</a><br>
+   <a href="networking/part_6.md#протокол-icmp">Протокол ICMP</a><br>
+   <a href="networking/part_6.md#протокол-arp">Протокол ARP</a><br>
    </details>
 
 2. [Компьютерные сети. Общие вопросы](https://github.com/sxexesx/learn-backend/blob/main/common/about.md)
