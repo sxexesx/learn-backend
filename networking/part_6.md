@@ -123,4 +123,4 @@ _**ICMP** (Internet Control Message Protocol)_ - протокол межсете
 
 Утилиты:
 - ping (доступность компьютера в сети)
-- tracerout (маршрут от отправителя к получателю)
+- tracerout (маршрут от отправителя к получателю `sudo tcptraceroute 224.0.0.251`)
