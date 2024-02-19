@@ -23,5 +23,5 @@
 
 <details>
 <summary>Что такое NAT?</summary>
-
+Технология преобразования IP
 </details>
