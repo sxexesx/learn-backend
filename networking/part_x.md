@@ -5,8 +5,9 @@
     <a href="networking/part_6.md#протокол-dhcp">Протокол DHCP</a><br>
     <a href="networking/part_6.md#протокол-icmp">Протокол ICMP</a><br>
     <a href="networking/part_6.md#протокол-arp">Протокол ARP</a><br>
-    <a href="networking/part_7.md#протокол-udp">Протокол ARP</a><br>
-    <a href="networking/part_7.md#протокол-tcp">Протокол ARP</a><br>
+    <a href="networking/part_7.md#протокол-udp">Протокол UDP</a><br>
+    <a href="networking/part_7.md#протокол-tcp">Протокол TCP</a><br>
+    <a href="networking/part_6.md#протокол-dns">Протокол DNS</a><br>
 </details>
 
 <details>
@@ -23,5 +24,5 @@
 
 <details>
 <summary>Что такое NAT?</summary>
-Технология преобразования IP
+Технология преобразования IP-адреса внутренней сети во внешний IP-адрес, что позволяет решить проблему ограниченности адресов IPv4.
 </details>

@@ -17,6 +17,7 @@
       - [Wi-Fi](networking/part_4.md) _(режимы доступа, формат кадра)_
    - [Сетевой уровень](networking/part_5.md) _(IP адреса, передача пакетов, протоколы IP, ICMP, ARP)_
    - [Транспортный уровень](networking/part_7.md) _(протоколы UDP, TCP, подтверждение достаки, метод соединения, управление перегрузкой, интерфейс сокетов, NAT)_
+   - [Прикладной уровень](networking/part_8.md) _(протоколы DNS, HTTP, FTP, SMTP)_
    - [Вопросы на интервью](networking/part_x.md)
 
 2. [Компьютерные сети. Общие вопросы](https://github.com/sxexesx/learn-backend/blob/main/common/about.md)
