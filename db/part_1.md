@@ -67,7 +67,7 @@ _**DDL** (data defenition language)_ - язык описания баз данн
     - DATE - 4 байта
     - TIME [WITHOUT TIME ZONE] - 8 байт
     - TIME [WITH TIME ZONE] - 12 байт
-    - INTERVAL - 16 байт
+    - INTERVAL - 16 байт (два timestamp)
 * Null
 
 ### Миграции
