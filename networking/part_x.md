@@ -1,18 +1,18 @@
 <details>
     <summary>Основные протоколы</summary>
-    <a href="networking/part_3.md#протокол-stp">Протокол STP</a><br>
-    <a href="networking/part_6.md#протокол-ip">Протокол IP</a><br>
-    <a href="networking/part_6.md#протокол-dhcp">Протокол DHCP</a><br>
-    <a href="networking/part_6.md#протокол-icmp">Протокол ICMP</a><br>
-    <a href="networking/part_6.md#протокол-arp">Протокол ARP</a><br>
-    <a href="networking/part_7.md#протокол-udp">Протокол UDP</a><br>
-    <a href="networking/part_7.md#протокол-tcp">Протокол TCP</a><br>
-    <a href="networking/part_8.md#протокол-dns">Протокол DNS</a><br>
-    <a href="networking/part_9.md#протокол-http">Протокол HTTP</a><br>
-    <a href="networking/part_8.md#протокол-smtp">Протокол SMTP</a><br>
-    <a href="networking/part_8.md#протокол-pop3">Протокол POP3</a><br>
-    <a href="networking/part_8.md#протокол-imap">Протокол IMAP</a><br>
-    <a href="networking/part_8.md#протокол-ftp">Протокол FTP</a><br>
+    <a href="part_3.md#протокол-stp">Протокол STP</a><br>
+    <a href="part_6.md#протокол-ip">Протокол IP</a><br>
+    <a href="part_6.md#протокол-dhcp">Протокол DHCP</a><br>
+    <a href="part_6.md#протокол-icmp">Протокол ICMP</a><br>
+    <a href="part_6.md#протокол-arp">Протокол ARP</a><br>
+    <a href="part_7.md#протокол-udp">Протокол UDP</a><br>
+    <a href="part_7.md#протокол-tcp">Протокол TCP</a><br>
+    <a href="part_8.md#протокол-dns">Протокол DNS</a><br>
+    <a href="part_9.md#протокол-http">Протокол HTTP</a><br>
+    <a href="part_8.md#протокол-smtp">Протокол SMTP</a><br>
+    <a href="part_8.md#протокол-pop3">Протокол POP3</a><br>
+    <a href="part_8.md#протокол-imap">Протокол IMAP</a><br>
+    <a href="part_8.md#протокол-ftp">Протокол FTP</a><br>
 </details>
 
 <details>
