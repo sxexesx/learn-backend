@@ -19,7 +19,10 @@
    - [Транспортный уровень](networking/part_7.md) _(протоколы UDP, TCP, подтверждение доставки, метод соединения, управление перегрузкой, интерфейс сокетов, NAT)_
    - [Прикладной уровень](networking/part_8.md) _(протоколы DNS, FTP, SMTP, POP3, IMAP)_
    - [HTTP, HTTPs](networking/part_9.md)
-   - [Сетевое взаимодействие приложений](networking/part_10.md) _(REST, SSL/TLS, CORs)_
+   - [Сетевое взаимодействие приложений](networking/part_10.md)
+     - [SSL/TLS](networking/part_10.md#ssltls)
+     - [REST](networking/part_10.md#rest)
+     - [CORs](networking/part_10.md#что-такое-cors)
    - [Вопросы на интервью](networking/part_x.md)
 
 2. [Программирование. Общие вопросы]()
