@@ -80,4 +80,13 @@ tRPC - type-safe RPC
 
 
 ## SSL/TLS
+
+_**TLS** (Transport Layer Security)_ - протокол защиты транспортного уровня
+_**SSL** (Secure Sockets Layer)_ - уровень защиты сокетов (устарел)
+
+Семейство протоколов для безопасной передачи данных. Используются протоколами прикладного уровня: HTTPs, SMTPs, POP3s, IMAPs
+
+![img.png](src3/img04.png)
+
+
 ![img.png](src3/img02.png)
