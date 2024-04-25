@@ -13,6 +13,7 @@
     <a href="part_8.md#протокол-pop3">Протокол POP3</a><br>
     <a href="part_8.md#протокол-imap">Протокол IMAP</a><br>
     <a href="part_8.md#протокол-ftp">Протокол FTP</a><br>
+    <a href="part_10.md#протокол-tls">Протокол TLS</a><br>
 </details>
 
 <details>
