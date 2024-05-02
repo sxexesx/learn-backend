@@ -20,7 +20,7 @@
    - [Прикладной уровень](networking/part_8.md) _(протоколы DNS, FTP, SMTP, POP3, IMAP)_
    - [HTTP, HTTPs](networking/part_9.md)
    - [Сетевое взаимодействие приложений](networking/part_10.md)
-     - [SSL/TLS](networking/part_10.md#ssltls)
+     - [SSL/TLS](networking/part_11.md)
      - [REST](networking/part_10.md#rest)
      - [CORs](networking/part_10.md#что-такое-cors)
    - [Вопросы на интервью](networking/part_x.md)
