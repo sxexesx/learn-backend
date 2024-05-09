@@ -27,4 +27,19 @@ FETCH NEXT 50 ROWS ONLY;
 
 -- DISTINCT
 SELECT DISTINCT Contact
-FROM Sales.OrderLines
+FROM Sales.OrderLines;
+
+-- простое условие
+SELECT *
+FROM Sales.StockItems
+WHERE Sales.StockItemName = 'Chocolate sharks 20g';
+
+-- простой LIKE
+SELECT *
+FROM Sales.StockItems
+WHERE Sales.StockItemName like 'Chocolate%';
+
+-- работа с NULL
+SELECT *
+FROM Sales.StockItems
+WHERE Sales.StockItemName IS NULL

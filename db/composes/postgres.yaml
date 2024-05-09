@@ -11,10 +11,10 @@ services:
     networks:
       - test_network
     restart: always
-    volumes:
-      - ./postgres_data.sql:/docker-entrypoint-initdb.d/postgres_data.sql
+    # volumes:
+      # - ./postgres_data.sql:/docker-entrypoint-initdb.d/postgres_data.sql
     environment:
-      POSTGRES_DB: dev
+      POSTGRES_DB: dvdrental
       POSTGRES_USER: dev
       POSTGRES_PASSWORD: dev
 

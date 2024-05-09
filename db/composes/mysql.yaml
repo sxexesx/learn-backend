@@ -10,9 +10,9 @@ services:
     restart: always
     ports:
       - "3306:3306"
-    command: --init-file /data/application/mysql_data.sql
-    volumes:
-        - ./mysql_data.sql:/data/application/mysql_data.sql
+    # command: --init-file /data/application/mysql_data.sql
+    # volumes:
+        # - ./mysql_data.sql:/data/application/mysql_data.sql
     environment:
       MYSQL_DATABASE: dev
       MYSQL_USER: dev
