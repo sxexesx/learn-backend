@@ -1,0 +1,37 @@
+--Task 20 (2):
+-- Найдите производителей, выпускающих по меньшей мере три различных модели ПК. Вывести: Maker, число моделей ПК.
+select p.maker, count(p.model)
+from product p
+where p.type = 'PC'
+group by p.maker
+having count(distinct p.model) >= 3;
+
+-- Task 21 (1):
+-- Найдите максимальную цену ПК, выпускаемых каждым производителем, у которого есть модели в таблице PC.
+-- Вывести: maker, максимальная цена.
+select pr.maker, max(pc.price)
+from pc pc
+         left join product pr on pc.model = pr.model
+group by pr.maker;
+
+-- Task 22 (1):
+-- Для каждого значения скорости ПК, превышающего 600 МГц, определите среднюю цену ПК с такой же скоростью.
+-- Вывести: speed, средняя цена.
+select p.speed, AVG(p.price)
+from pc p
+where p.speed > 600
+group by p.speed;
+
+-- Task 23 (2):
+-- Найдите производителей, которые производили бы как ПК со скоростью не менее 750 МГц, так и ПК-блокноты со скоростью не менее 750 МГц.
+-- Вывести: Maker
+select pr.maker
+from product pr
+         join pc p on pr.model = p.model
+where p.speed >= 750
+intersect
+select pr.maker
+from product pr
+         join laptop l on pr.model = l.model
+where l.speed >= 750;
+

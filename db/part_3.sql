@@ -42,4 +42,18 @@ WHERE Sales.StockItemName like 'Chocolate%';
 -- работа с NULL
 SELECT *
 FROM Sales.StockItems
-WHERE Sales.StockItemName IS NULL
+WHERE Sales.StockItemName IS NULL;
+
+-- получение даты
+SELECT 'GETDATE' AS STFunction, GETDATE();
+SELECT 'SYSDATETIME' AS STFunction, SYSDATETIME();
+
+SELECT o.OrderDate,
+       MONTH(o.OrderDate) as Month,
+       DAY(o.OrderDate) as Day,
+       YEAR(o.OrderDate) as Yead
+FROM o.Sales;
+
+-- получение разницы дат
+SELECT DATEDIFF(yy, '2017-01-01', '2018-01-01') AS YearDiff;
+SELECT DATEDIFF(dd, '2017-01-01', '2018-01-01') AS DayDiff;

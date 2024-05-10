@@ -72,6 +72,19 @@ and with_query is:
 TABLE [ ONLY ] table_name [ * ]
 ```
 
+#### Порядок выполнения SELECT
+
+(5) SELECT (5-2) DISTINCT (5-3) TOP (5-1) <select_list>
+(1) FROM (1-J) <left_table> <join_type> JOIN <right_table> ON <predicate>
+        (1-A) <left_table> <join_type> APPLY <right_table_expression> AS <alias>
+        (1-P) <left_table> <join_type> PIVOT <pivot_specification> AS <alias>
+        (1-U) <left_table> <join_type> UNPIVOT <unpivot_specification> AS <alias>
+(2) WHERE <where_predicate>
+(3) GROUP BY (group_by_predicate)
+(4) HAVING (having_predicate)
+(6) ORDER BY <order_by_list>
+
+
 Примеры: [селекты](part_3.sql)
 
 ### Фильтрация WHERE
@@ -89,11 +102,11 @@ TABLE [ ONLY ] table_name [ * ]
 | 7     | `ALL, ANY, BETWEEN, IN, LIKE, OR, SOME`                                            |
 | 8     | `=` (присваивание )                                                                |
 
-### BETWEEN
+#### BETWEEN
 
 `WHERE x BETWEEN x1 AND x2` -> `x >= x1 AND x <= x2`
 
-### LIKE
+#### LIKE
 
 `%` - любая строка, содержащая 0 и больше символов  
 `_` - любой одиночный символ  
@@ -106,3 +119,56 @@ TABLE [ ONLY ] table_name [ * ]
 2. NULL может записываться в поля любого типа
 3. Любая операция с NULL дает в результате NULL
 4. Любое сравнение с NULL дает в результате UNKNOWN
+5. NULL при чтении (в OLAP системах) может сильно влиять на производительность
+
+`ISNULL(A, B)` - если первый аргумент null, тогда возвращается второй аргумент
+`COALESCE(A,B,C,D)` - первое не NULL значение
+
+
+### Даты и строки
+
+Установка даты для запроса:
+```
+SET DATEFORMAT mdy
+...
+GO
+```  
+`GETDATE`, `GETUTCDATE` - функции получения времени  
+`DAY`, `MONTH`, `YEAR`, `DATEPART` - получение части даты  
+`DATEDIFF`- получение разницы дат  
+`DATEADD`, `EOMONTH`   
+
+CONVERT(), FORMAT() - для преобразования дат с заданием формата отображения. По умолчанию 'yyyy-MM-dd'  
+Collation - параметры сортировки (например, Cyrillic_General_CI_AS)  
+
+### JOIN
+Аналог горизонтального соединения  
+
+`CROSS JOIN` - декартово произведение(каждой строчке одной таблицы сопоставляем каждую строчку другой)
+<div>
+  <img width="300" height="320" src="src/img05.png" alt="">
+</div>
+
+`INNER JOIN` - декартово произведение + фильтрация
+<div>
+  <img width="300" height="320" src="src/img06.png" alt="">
+</div>
+
+`LEFT/RIGHT JOIN` - INNER JOIN + внешние строки
+<div>
+  <img width="300" height="320" src="src/img07.png" alt="">
+</div>
+
+`FULL JOIN` - LEFT + RIGHT JOIN
+
+Рекомендуется делать индекс по тем колонкам, по которым делаем JOIN.  
+
+### UNION
+Аналог вертикального соединения.  
+`UNION ALL` дублирует одинаковые строки.  
+
+`UNION` - это `UNION ALL` + `DISTINCT`   
+
+<div>
+  <img width="500" height="240" src="src/img08.png" alt="">
+</div>
