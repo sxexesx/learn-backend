@@ -1,7 +1,7 @@
 ## Основные операции по работе с SQL
 
 _**DDL** (data defenition language)_ - язык описания баз данных, чтобы определить, что будет лежать в базе данных
-(CREATE, ALTER, DROP)  
+(CREATE, ALTER, DROP, TR NCATE)  
 _**DML** (data manipulation language)_ - язык оперирования данными (SELECT, INSERT, UPDATE, DELETE)
 _**DCL** (data control language)_ - язык управления доступом (GRANT, REVOKE, DENY)
 _**TCL** (transaction control language)_ - язык управления транзакциями (COMMIT, ROLLBACK, SAVEPOINT)
