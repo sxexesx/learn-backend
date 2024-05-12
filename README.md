@@ -44,6 +44,7 @@
     - [Основные понятия реляционной модели (ключи, типы данных, миграции)](db/part_2.md)
     - [DML: select, insert, update, delete](db/part_3.md)
     - [JOIN, UNION](db/part_4.md)
+    - Подзапросы, CTE
 
 6. Kafka
 

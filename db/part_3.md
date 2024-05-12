@@ -74,18 +74,19 @@ and with_query is:
 TABLE [ ONLY ] table_name [ * ]
 ```
 
-#### Порядок выполнения SELECT
+### Порядок выполнения SELECT
 
-(5) SELECT (5-2) DISTINCT (5-3) TOP (5-1) <select_list>
-(1) FROM (1-J) <left_table> <join_type> JOIN <right_table> ON <predicate>
-        (1-A) <left_table> <join_type> APPLY <right_table_expression> AS <alias>
-        (1-P) <left_table> <join_type> PIVOT <pivot_specification> AS <alias>
-        (1-U) <left_table> <join_type> UNPIVOT <unpivot_specification> AS <alias>
-(2) WHERE <where_predicate>
-(3) GROUP BY (group_by_predicate)
-(4) HAVING (having_predicate)
-(6) ORDER BY <order_by_list>
-
+```
+(5) SELECT (5-2) DISTINCT (5-3) TOP (5-1) <select_list>  
+(1) FROM (1-J) <left_table> <join_type> JOIN <right_table> ON <predicate>  
+        (1-A) <left_table> <join_type> APPLY <right_table_expression> AS <alias>  
+        (1-P) <left_table> <join_type> PIVOT <pivot_specification> AS <alias>  
+        (1-U) <left_table> <join_type> UNPIVOT <unpivot_specification> AS <alias>  
+(2) WHERE <where_predicate>  
+(3) GROUP BY (group_by_predicate)  
+(4) HAVING (having_predicate)  
+(6) ORDER BY <order_by_list>  
+```
 
 Примеры: [селекты](part_3.sql)
 
@@ -120,7 +121,7 @@ TABLE [ ONLY ] table_name [ * ]
 1. NULL не имеет типа
 2. NULL может записываться в поля любого типа
 3. Любая операция с NULL дает в результате NULL
-4. Любое сравнение с NULL дает в результате UNKNOWN
+4. Любое сравнение с NULL дает в результате **UNKNOWN** 
 5. NULL при чтении (в OLAP системах) может сильно влиять на производительность
 
 `ISNULL(A, B)` - если первый аргумент null, тогда возвращается второй аргумент
@@ -154,10 +155,13 @@ Collation - параметры сортировки (например, Cyrillic_
 ### UPDATE
 [примеры](part_3.sql)
 
+Недетерменированный update - когда на одну строку, которая обновляется, приходится несколько приджоиных строк
+
 ### DELETE / TRUNCATE
-Отличие от Truncate (DDL):
-1. Удаляет все данные из таблицы.
-2. Ему нельзя задать условие.
+Отличие от Truncate:
+0. DELETE - это DML, Truncate - это DDL 
+1. Удаляет все данные из таблицы
+2. Ему нельзя задать условие
 3. Требует больше разрешений чем DELETE
 4. Truncate не влияет на sequence
 

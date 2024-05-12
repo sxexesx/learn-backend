@@ -35,3 +35,21 @@ from product pr
          join laptop l on pr.model = l.model
 where l.speed >= 750;
 
+-- Task 24 (2):
+-- Перечислите номера моделей любых типов, имеющих самую высокую цену по всей имеющейся в базе данных продукции.
+with mmx as (select model, max(price) as max_price
+             from pc
+             group by model
+             union all
+             select model, max(price) as max_price
+             from laptop
+             group by model
+             union all
+             select model, max(price) as max_price
+             from printer
+             group by model),
+     mx as (select max(max_price) as mp
+            from mmx)
+select model
+from mmx
+where max_price = (select mp from mx);
