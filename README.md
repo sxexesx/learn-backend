@@ -45,6 +45,8 @@
     - [DML: select, insert, update, delete](db/part_3.md)
     - [JOIN, UNION](db/part_4.md)
     - Подзапросы, CTE
+    - ...
+    - [Вопросы к собеседованию](db/part_x.md)
 
 6. Kafka
 

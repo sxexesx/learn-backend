@@ -159,10 +159,10 @@ Collation - параметры сортировки (например, Cyrillic_
 
 ### DELETE / TRUNCATE
 Отличие от Truncate:
-0. DELETE - это DML, Truncate - это DDL 
-1. Удаляет все данные из таблицы
-2. Ему нельзя задать условие
-3. Требует больше разрешений чем DELETE
-4. Truncate не влияет на sequence
+1. DELETE - это DML, Truncate - это DDL 
+2. Удаляет все данные из таблицы
+3. Ему нельзя задать условие
+4. Требует больше разрешений чем DELETE
+5. Truncate не влияет на sequence
 
 
