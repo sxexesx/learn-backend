@@ -53,3 +53,21 @@ with mmx as (select model, max(price) as max_price
 select model
 from mmx
 where max_price = (select mp from mx);
+
+
+-- Task 25 (2):
+-- not completed
+-- Найдите производителей принтеров, которые производят ПК с наименьшим объемом RAM и с самым быстрым процессором среди
+-- всех ПК, имеющих наименьший объем RAM. Вывести: Maker
+with max_pc as (select model, max(speed) as max
+                from pc
+                where ram in (select min(ram) as min from pc)
+                group by model),
+     mmpc as (select maker
+              from max_pc mpc
+                       join product pr on mpc.model = pr.model)
+select distinct pr.maker
+from printer pt
+         join product pr on pt.model = pr.model
+         left join mmpc on mmpc.maker = pr.maker
+where mmpc.maker is not null
