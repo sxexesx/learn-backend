@@ -59,7 +59,7 @@ public class Demo {
     }
 
     static void configure() {
-        if (System.getProperty("os.name").equals("Windows 10")) {
+        if (System.getProperty("os.name").equals("Windows")) {
             dialog = new WindowsDialog();
         } else {
             dialog = mew MacDialog();
@@ -69,6 +69,4 @@ public class Demo {
     static void runBusinessLogic() {
         dialog.renderWindow();
     }
-
-
 }
