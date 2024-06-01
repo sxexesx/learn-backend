@@ -5,47 +5,104 @@ interface Builder {
 }
 
 class ConcreteBuilderA implements Builder {
-    private ConcreteResultA resultA;
+    private string a;
+    private string b;
+    private string c;
 
     @Override
     string setOptionA(string a) {
-        resultA.optionA = a
+        this.optionA = a
     }
 
     @Override
     string setOptionA(string b) {
-        resultA.optionB = b
+        this.optionB = b
     }
 
     @Override
     string setOptionC(string c) {
-        resultA.optionB = c
+        this.optionB = c
     }
 
     public ConcreteResultA getResult() {
-
+        return new ConcreteResultA(a, b, c);
     }
 }
 
 class ConcreteBuilderB implements Builder {
+    private string a;
+    private string b;
+    private string c;
+
+    @Override
+    string setOptionA(string a) {
+        this.optionA = a
+    }
+
+    @Override
+    string setOptionA(string b) {
+        this.optionB = b
+    }
+
+    @Override
+    string setOptionC(string c) {
+        this.optionB = c
+    }
+
+    public ConcreteResultB getResult() {
+        return new ConcreteResultB(a, b, c);
+    }
 }
 
-interface Result {
+public class ConcreteResultA {
     public string optionA;
     public string optionB;
     public string optionC;
+
+    public ConcreteResultA(string a, string b, string c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+//     getters, setters
 }
 
-class ConcreteResultA implements Result {
+public class ConcreteResultB {
     public string optionA;
     public string optionB;
     public string optionC;
+
+    public ConcreteResultB(string a, string b, string c) {
+            this.a = a;
+            this.b = b;
+            this.c = c;
+        }
+
 }
 
-class ConcreteResultB implements Result {
-    public string optionA;
-    public string optionB;
-    public string optionC;
+// директор
+public class Director {
+    public void constructProduct(Builder builder) {
+        builder.setOptionA("option-1");
+        builder.setOptionB("option-2");
+        builder.setOptionC("option-3");
+    }
 }
 
+// client
+public class App {
+    public static void main(args...) {
+        Director d = new Director();
 
+        Builder builderA = new ConcreteBuilderA();
+        d.constructProduct(builderA);
+
+        ConcreteResultA result = builderA.getResult();
+
+//      -------------------------
+        Builder builderB = new ConcreteBuilderB();
+        d.constructProduct(builderB);
+
+        ConcreteResultB result1 = builderB.getResult();
+    }
+}
