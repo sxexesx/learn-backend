@@ -56,18 +56,52 @@ where max_price = (select mp from mx);
 
 
 -- Task 25 (2):
--- not completed
+-- fixme not completed
 -- Найдите производителей принтеров, которые производят ПК с наименьшим объемом RAM и с самым быстрым процессором среди
 -- всех ПК, имеющих наименьший объем RAM. Вывести: Maker
-with max_pc as (select model, max(speed) as max
-                from pc
-                where ram in (select min(ram) as min from pc)
-                group by model),
-     mmpc as (select maker
-              from max_pc mpc
-                       join product pr on mpc.model = pr.model)
-select distinct pr.maker
-from printer pt
-         join product pr on pt.model = pr.model
-         left join mmpc on mmpc.maker = pr.maker
-where mmpc.maker is not null
+with cl as (select model, ram, max(speed) as max
+            from pc
+            where ram in (select min(ram) as min from pc)
+            group by model, ram),
+     mm as (select maker
+            from cl p1
+                     join product p2 on p1.model = p2.model)
+
+select distinct maker
+from product
+where maker in (select maker from mm);
+
+
+
+-- Task 26 (2)
+-- Найдите среднюю цену ПК и ПК-блокнотов, выпущенных производителем A (латинская буква). Вывести: одна общая средняя цена.
+with all_models as (select pc.price, pc.model
+                    from pc
+                             join product pr on pc.model = pr.model
+                    where pr.maker = 'A'
+                    union all
+                    select lp.price, lp.model
+                    from laptop lp
+                             join product pr on lp.model =
+                                                pr.model
+                    where pr.maker = 'A')
+select avg(price)
+from all_models;
+
+
+-- Task 27 (2)
+-- Найдите средний размер диска ПК каждого из тех производителей, которые выпускают и принтеры. Вывести: maker,
+-- средний размер HD.
+with spr as (select distinct p1.maker
+             from product p1
+             where type = 'printer'),
+     pcm as (select p1.maker, p1.model
+             from product p1
+                      join spr on p1.maker = spr.maker
+             where p1.type = 'pc')
+
+select maker, avg(hd)
+from pc
+         join pcm on pc.model = pcm.model
+group by maker;
+
