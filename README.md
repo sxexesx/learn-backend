@@ -31,6 +31,7 @@
     - Как реализованы принципы ООП в Go
     - [Подходы в программировании (SOLID, KISS)](prog/part_1.md#Подходы-в-программировании)
     - Требования к транзакционным системам (ACID)
+    - [git](git/part_1.md)
 
 3. [Паттерны проектирования](https://github.com/sxexesx/learn-backend/blob/main/patterns/about.md)
     - [Порождающие](patterns/part_1.md)
