@@ -75,3 +75,13 @@
 ### Удаленные репозитории
 
 ![img.png](src/img04.png)
+
+
+commit
+branch
+checkout
+cherry-pick
+reset
+revert
+rebase
+merge
