@@ -146,7 +146,7 @@ $$MSE = \frac 1 n \sum_{}^{n} (a(x_i) - y_i)^2$$
 **MAE (min absolute error)** - средняя абсолютная ошибка
 $$MAE = \frac 1 n \sum_{}^{n} |a(x_i) - y_i|$$
 
-![img.png](img/ img04.png)
+![img.png](img/img04.png)
 
 
 #### Несимметричные метрики
