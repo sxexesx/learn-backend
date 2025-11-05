@@ -1,7 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/sxexesx/learn-backend/go/_projects/08_modules/server/internal/storage"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	strg := storage.NewStorage()
+
+	ff, err := strg.Upload("test.txt")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Printf("Stored: %s", ff.Name)
 }
