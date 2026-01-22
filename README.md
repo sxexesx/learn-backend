@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="325" height="281" src="misc/gopher.png">
+  <img width="325" height="281" src="misc/nerd.png">
   <h3>Как стать настоящим гофером</h3>
 </div>
 
