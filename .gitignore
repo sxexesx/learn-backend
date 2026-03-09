@@ -27,3 +27,4 @@ vendor.pb
 .local
 .vscode
 .obsidian
+.DS_Store
