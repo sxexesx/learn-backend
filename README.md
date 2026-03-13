@@ -48,9 +48,11 @@
 7. System design
     - [Что такое распределенная система. Общие понятия](system-design/note_1.md)
     - [Шардирование](system-design/note_2.md)
+    
     - [Система апдейтов операционной системы мобильного устройства](system-design/note_4.md)
     - [Система статусов пользователя](system-design/note_5.md)
-    - [Система email-нотификаций](system-design/note_6.md)
+    - [Система email оповещений](system-design/note_6.md)
+    - [Мэссенджер](system-design/note_7.md)
 
     - [Бонус](system-design/note_n.md)
 
