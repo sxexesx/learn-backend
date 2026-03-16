@@ -37,8 +37,10 @@
 
 4. [git](git/part_1.md)
 
-5. [Kafka](kafka/note_1.md)
-    - sdfsdf
+5. Kafka
+    - [Кафка. Общие понятия](kafka/note_1.md)
+    - [Гарантии доставки](kafka/note_2.md)
+
      
 6. [Микросервисная архитектура](microsvc/common.md)
     - [Что такое микросервисы? Плюсы и минусы микросервисной архитектуры](microsvc/about.md)
