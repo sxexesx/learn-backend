@@ -26,8 +26,7 @@
     - [Вопросы на интервью](networking/part_x.md)
 
 2. ОС
-    - syscall 
-
+    - [syscall](os/syscall.md#syscall) 
 
 
 3. [Программирование. Общие вопросы](prog/part_1.md)
@@ -41,13 +40,22 @@
 
 4. [git](git/part_1.md)
 
+
 5. Kafka
     - [Кафка. Общие понятия](kafka/note_1.md)
-    - [Гарантии доставки](kafka/note_2.md)
-     
-6. [Микросервисная архитектура](microsvc/common.md)
+        - [Почему Kafka?](kafka/note_1#почему-kafka)
+        - [Топики и партиции](kafka/note_1#топики-и-партиции)
+        - [Консьюмер группа](kafka/note_1#консьюмер-группа)
+        - [Гарантирован ли порядок?](kafka/note_1.md#гарантирован-ли-порядок-сообщений-в-кафке)
 
+    - [Гарантии доставки](kafka/note_2.md#гарантии-доставки)
+        - [Transactional outbox](kafka/note_2#transactional-outbox)
+        - [Dead Leter Queue](kafka/note_2#dead-letter-queue)
+
+
+6. [Микросервисная архитектура](microsvc/common.md)
     - [Паттерны микросервисной архитектуры, которые обязательно знать](microsvc/most_known.md)
+
 
 7. System design
     - [Что такое микросервисы? Плюсы и минусы микросервисной архитектуры](system-design/about.md)
