@@ -51,3 +51,11 @@ Transaction (
 Traffic (write): 1500 * 200B = 30000 B/s = 300 KB/s
 Traffic (read): 200 * 200B * 20 (транзакций) = 800000 B/s = 800 KB/s 
 
+
+## API
+
+- CreateTransaction(params ...)
+- GetReport(params ...)
+- ListTransactions(params ...)
+- CreateAccount(params ...)
+- CRUD ()
