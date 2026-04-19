@@ -91,10 +91,19 @@
     - [API](system-design/part_5.md)
         - [Подходы HTTP](system-design/part_5.md#подходы-http)
         - [Проблемы проектирования](system-design/part_5#проблемы-проектирования)
-        - [](system-design/part_5)
     
     - [Observability](system-design/part_6.md)
-        - []()
+        - [Мониторинг](system-design/part_6.md#мониторинг)
+        - [Алертинг](system-design/part_6.md#алертинг)
+        - [Логирование](system-design/part_6.md#логирование)
+        - [Непрерывное профилирование](system-design/part_6.md#непрерывное-профилирование)
+
+    - [Базы данных](system-design/part_7.md)
+        - [Виды баз данных](system-design/part_7.md#виды-баз-данных)
+        - [Выбор баз данных](system-design/part_7.md#как-выбирать-базы-данных)
+        - [OLAP vs OLTP](system-design/part_7.md#olap-vs-oltp)
+        - [Где храняться данные баз данных](system-design/part_7.md#где-храняться-данные-в-бд)
+        - [](system-design/part_7.md)
     
     - Практика
         - [Практика установки требований и оценки нагрузки](sysmte-design/practice_1.md)
