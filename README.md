@@ -102,9 +102,20 @@
         - [Виды баз данных](system-design/part_7.md#виды-баз-данных)
         - [Выбор баз данных](system-design/part_7.md#как-выбирать-базы-данных)
         - [OLAP vs OLTP](system-design/part_7.md#olap-vs-oltp)
-        - [Где храняться данные баз данных](system-design/part_7.md#где-храняться-данные-в-бд)
-        - [](system-design/part_7.md)
+        - [Где хранятся данные баз данных](system-design/part_7.md#где-хранятся-данные-в-бд)
+        - [Индексы](system-design/part_7.md#индексы)
+        - [ACID](system-design/part_7.md#acid)
+        - [BASE](system-design/part_7.md#base)
+        - [Аномалии транзакций](system-design/part_7.md#аномалии-транзакций)
+        - [Решение проблем изоляции](system-design/part_7.md#решение-проблем-изоляции)
+
+    - [Брокеры сообщений](system-design/part_8.md)
     
+    - [...](system-design/part_9.md)
+
+
+
+
     - Практика
         - [Практика установки требований и оценки нагрузки](sysmte-design/practice_1.md)
 -----
