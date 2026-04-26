@@ -115,7 +115,16 @@
 
     - [Расчет ресурсов для системы](system-design/part_8.md#расчет-ресурсов-для-системы)
 
-    - [...](system-design/part_9.md)
+    - [Хранение данных распределенно](system-design/part_9.md)
+        - [Бэкапы](system-design/part_9.md#бэкап)
+        - [Реликация](system-design/part_9.md#репликация)
+        - [Виды репликаций](system-design/part_9.md#виды-репликации)
+        - [CAP теорема](system-design/part_9.md#cap-теорема)
+        - [Партиционирование](system-design/part_9.md#партиционирование)
+        - [Шардирование](system-design/part_9.md#шардирование)
+        - [Роутинг данных](system-design/part_9.md#routing-данных)
+        - [](system-design/part_9.md)
+        - [](system-design/part_9.md)
 
 
 
