@@ -174,24 +174,149 @@ Basically Available, Soft state, Eventually consistent
 
 ### Аномалии транзакций
 
-- Потерянное обновление (lost update) - два обновления одной и той же сущности
+Можно проверить на примере.
+```bash
+docker exec -it <container> psql -U <user> -d <db>
+```
+Подготавливаем данные:
+```sql
+DROP TABLE IF EXISTS accounts;
 
-<img src="./_src/img_24.png">
+CREATE TABLE accounts (
+  id INT PRIMARY KEY,
+  balance INT
+);
 
-- Грязное чтение (dirty read) - чтение во время до коммита другой транзакции
+INSERT INTO accounts VALUES
+  (1, 100),
+  (2, 200);
+```
+<br>  
+
+#### Грязное чтение (dirty read)
+
+Чтение во время до коммита другой транзакции. В PostgreSQL не допускает даже в Read Uncommited.
 
 <img src="./_src/img_25.png">
 
-- Неповторяющееся чтение (non-repeatable read)
+```sql
+-- session #1
+BEGIN;
+UPDATE accounts SET balance = 999 WHERE id = 1;
+
+-- session #2
+BEGIN ISOLATION LEVEL READ UNCOMMITTED;
+
+SELECT * FROM accounts WHERE id = 1;
+-- #### старое значение 100 ####
+
+-- session #1
+ROLLBACK;
+
+-- session #2
+COMMIT;
+```
+<br>  
+
+
+#### Неповторяющееся чтение (non-repeatable read) в Read commited
+
+Во время выполнения транзакции другая транзакция изменяет данные. В данном примере во время выполнения транзакции 1 транзакция 2 изменяется значение.
 
 <img src="./_src/img_26.png">
 
-- Чтение "фантомов" (phantom read)
+```sql
+-- session #1
+BEGIN ISOLATION LEVEL READ COMMITTED;
+
+SELECT * FROM accounts WHERE id = 1;
+-- #### 100 #####
+
+-- session #2
+BEGIN;
+UPDATE accounts SET balance = 150 WHERE id = 1;
+COMMIT;
+
+-- session #1
+SELECT * FROM accounts WHERE id = 1;
+-- #### 150 ##### !!!!
+
+-- session #1
+COMMIT;
+```
+<br>  
+
+
+#### Потерянное обновление (lost update)
+
+Два обновления одной и той же сущности. Решается либо через поднятие уровня до Repeatable Read, либо через select ... for update
+
+<img src="./_src/img_24.png">
+
+```sql
+-- session #1
+BEGIN ISOLATION LEVEL READ COMMITTED;
+
+SELECT balance FROM accounts WHERE id = 1;
+-- #### 100 #####
+
+-- session #2
+BEGIN ISOLATION LEVEL READ COMMITTED;
+
+SELECT balance FROM accounts WHERE id = 1;
+-- #### 100 #####
+
+-- session #1
+UPDATE accounts SET balance = 100 + 10 WHERE id = 1;
+COMMIT;
+
+-- session #2
+UPDATE accounts SET balance = 100 + 20 WHERE id = 1;
+COMMIT;
+
+-- #### ИТОГ: 120 #### !!!!
+```
+
+<br>  
+
+
+#### Чтение "фантомов" (phantom read)
+
+В REPEATABLE READ phantom read НЕ происходит в PostgreSQL. ⚠️ Важно: это отличие PostgreSQL от классической теории.
+
+```sql
+-- подготовка
+INSERT INTO accounts VALUES
+  (1, 100),
+  (2, 200);
+```
+
+
+```sql
+-- session #1
+BEGIN ISOLATION LEVEL READ COMMITTED;
+
+SELECT * FROM accounts WHERE balance >= 150;
+
+-- session #2
+BEGIN;
+INSERT INTO accounts VALUES (3, 300);
+COMMIT;
+
+-- session #1
+SELECT * FROM accounts WHERE balance >= 150;
+-- ####
+-- (2, 200), (3, 300)
+-- ####
+
+```
 
 <img src="./_src/img_27.png">
 
+<br>  
 
-### Решение проблем изоляции**
+
+### Решение проблем изоляции
 
 Чем выше уровень изоляции транзакций, тем ниже пропускная способность базы данных.  
 
