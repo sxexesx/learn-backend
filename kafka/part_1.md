@@ -1,4 +1,4 @@
-# Kafka
+# Очереди
 
 ## Для чего нужны очереди?
 
@@ -43,4 +43,21 @@
 
 ## Проблемы и алгоритмы
 
-1. 
+1. Алгоритмы
+    - FIFO  
+        <img src="./src/img_04.png">
+
+    - LIFO  
+        <img src="./src/img_05.png">
+    
+    - Best Effort  
+        <img src="./src/img_06.png">
+
+    - Qulity of Service  
+
+2. Структуры данных внутри: Heap vs List
+3. Зависимости: nested queues, hierarchy
+4. retry, dekay, retry with delay
+5. DLQ
+6. Task dependecy
+7. TTL, TTR, putback, Vilibility
