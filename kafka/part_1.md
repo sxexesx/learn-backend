@@ -94,25 +94,25 @@ Guarantee: X ≠ 1 | X ≤ 1
 <img src="./src/img_06.png">
 
 2. Multi Instance - много очередей, но кладется в доступную
-Availability: high
-Durability: medium - может быть утеряно
-Scalability: yes
-Guarantee: X ≠ 1 | X ≤ 1 
+Availability: high.  
+Durability: medium - может быть утеряно.  
+Scalability: yes.  
+Guarantee: X ≠ 1 | X ≤ 1   
 
 <img src="./src/img_07.png">
 
-3. Multiple queues, put K/N - multiplication
-Availability: high
-Durability: high
-Scalability: yes
-Guarantee: X ≠ K | X ≤ K -> X ≥ 1
+3. Multiple queues, put K/N - multiplication.  
+Availability: high.  
+Durability: high.  
+Scalability: yes.  
+Guarantee: X ≠ K | X ≤ K -> X ≥ 1.  
 
 <img src="./src/img_08.png">
 
 4. Replicated queues, 1/N
-Availability: high
-Durability: high
-Scalability: yes
-Guarantee: X ~ 1 (X ≥ 1)
+Availability: high.  
+Durability: high.  
+Scalability: yes.  
+Guarantee: X ~ 1 (X ≥ 1).  
  
 <img src="./src/img_09.png">
