@@ -116,3 +116,6 @@ Scalability: yes
 Guarantee: X ~ 1 (X ≥ 1).  
  
 <img src="./src/img_10.png">
+
+Предельная идеальная топология:
+<img src="./src/img_11.png">
