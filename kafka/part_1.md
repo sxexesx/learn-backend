@@ -119,3 +119,33 @@ Guarantee: X ~ 1 (X ≥ 1).
 
 Предельная идеальная топология:
 <img src="./src/img_11.png">
+
+
+## Какие инструменты существуют
+
+1. Потеря сообщения не страшна
+2. Сообщение простое
+3. Высокая пропускная способность и масштабируемость
+
+>> NATS, NSQ, ZeroMQ или Redis
+
+1. Просто попробовать
+
+>> SQS, CloudAMPQ, RabbitMQ, Redis
+
+1. Облочное приложение
+2. Микросервисы
+
+>> SQS, Amazon EventBridge, NATS
+
+1. Нужен стримминг
+2. Сохранность сообщений, строгий порядок
+3. StrictFIFO
+
+>> Kafka, RedPanda, NATS JetStream, Apache Pulsar
+
+1. Сложный сценарий, запланированные задачи, кластера
+
+>> Tarantool, RabbitMQ, NATS (for topology)
+
+
